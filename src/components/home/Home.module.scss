@@ -1,0 +1,27 @@
+.home {
+	margin: 0 auto;
+	text-align: center;
+}
+
+button {
+	width: 400px;
+	height: 100px;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 5rem;
+
+	& > button {
+		margin: 1rem 0;
+		font-size: xx-large;
+		font-weight: bold;
+	}
+	
+	.logs {
+		background-color: #2D3233 !important;
+	}
+}
