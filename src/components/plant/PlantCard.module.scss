@@ -1,0 +1,45 @@
+.plantCard {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  width: 320px;
+  padding: 1.5rem;
+
+  .name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .moisture {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .chip {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .connection {
+    margin-right: 0.5rem;
+  }
+
+  .updated {
+    display: flex;
+    flex-grow: 1;
+  }
+}

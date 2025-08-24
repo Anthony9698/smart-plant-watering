@@ -1,9 +1,9 @@
 import React from "react";
-import Water from "./components/water/Water";
+import PlantCard from "./components/plant/PlantCard";
 import "../index.css";
 
 function App() {
-  return <Water />;
+  return <PlantCard />;
 }
 
 export default App;

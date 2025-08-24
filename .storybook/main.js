@@ -7,6 +7,8 @@ const config = {
     "@storybook/addon-a11y",
     "@storybook/addon-vitest",
     "@storybook/addon-styling-webpack",
+    "@storybook/addon-themes",
+    "@storybook/preset-scss",
   ],
   framework: {
     name: "@storybook/react-vite",
