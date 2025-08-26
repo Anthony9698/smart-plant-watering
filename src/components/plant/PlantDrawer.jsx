@@ -3,9 +3,14 @@ import Box from "@mui/material/Box";
 import styles from "./PlantDrawer.module.scss";
 import Drawer from "@mui/material/Drawer";
 import { IoArrowBackOutline } from "react-icons/io5";
-import { Button, Slider, Typography } from "@mui/material";
+import { Button, Slider, Typography, Chip } from "@mui/material";
 
-export default function PlantDrawer({ drawerOpen, name, dryThreshold }) {
+export default function PlantDrawer({
+  drawerOpen,
+  name,
+  dryThreshold,
+  moisture,
+}) {
   const [open, setOpen] = useState(drawerOpen);
 
   const toggleDrawer = (open) => (event) => {
@@ -30,7 +35,24 @@ export default function PlantDrawer({ drawerOpen, name, dryThreshold }) {
           className={styles.close}
           onClick={toggleDrawer(false)}
         />
-        <Typography variant="h5">{name}</Typography>
+        <Box className={styles.header}>
+          <Typography variant="h5">{name}</Typography>
+          {moisture < dryThreshold ? (
+            <Chip
+              className={styles.chip}
+              label="DRY"
+              color="error"
+              size="small"
+            />
+          ) : (
+            <Chip
+              className={styles.chip}
+              label="WET"
+              color="success"
+              size="small"
+            />
+          )}
+        </Box>
         <Box className={styles.graph}>Graph will go here</Box>
         <Box>
           <span style={{ fontWeight: "600" }}>DRY</span>

@@ -4,6 +4,20 @@
     padding: 1.5rem;
   }
 
+  .header {
+    display: flex;
+    align-items: center;
+
+    .chip {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: flex;
+      width: fit-content;
+      margin-left: 0.5rem;
+    }
+  }
+
   .close {
     width: 32px;
     height: 32px;
