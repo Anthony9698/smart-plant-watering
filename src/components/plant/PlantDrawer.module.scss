@@ -1,0 +1,48 @@
+.drawer {
+  .main {
+    width: 50vw;
+    padding: 1.5rem;
+  }
+
+  .close {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5rem;
+  }
+
+  h5 {
+    margin-bottom: 0.5rem;
+  }
+
+  .graph {
+    margin-bottom: 0.5rem;
+    height: 350px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .controls {
+    display: flex;
+    margin-bottom: 0.5rem;
+
+    .slider {
+      display: block;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+  }
+
+  .water {
+    font-weight: bold;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
